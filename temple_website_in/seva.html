@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Daily Seva | Sri Bhoo Varahanatha</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Lora&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <style>
+        .seva-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            padding: 40px 6%;
+            background-color: var(--parchment);
+        }
+        .seva-card {
+            background: white;
+            padding: 60px 40px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            border-bottom: 5px solid var(--temple-red);
+            transition: transform 0.3s ease;
+        }
+        .seva-card:hover { transform: translateY(-10px); }
+        .seva-card h4 {
+            font-family: 'Cinzel', serif;
+            color: var(--temple-red);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+        .seva-card p { font-size: 0.95rem; margin-bottom: 25px; min-height: 50px; }
+        .price-tag {
+            color: var(--sacred-gold);
+            font-weight: 700;
+            font-size: 1.2rem;
+            font-family: 'Montserrat', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+    <a href="index.html" class="nav-logo">
+        <img src="http://bhoovarahatemple.com/images/logo.png" alt="Temple Logo">
+        <span>SRI BHOO<br>VARAHANATHA</span>
+    </a>
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="seva.html">Seva</a></li>
+        <li><a href="history.html">History</a></li>
+        <li><a href="donations.html">Donations</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+    <div class="section-header">
+        <h2>Daily Sevas</h2>
+        <div class="divider"></div>
+    </div>
+
+    <div class="seva-grid">
+        <div class="seva-card">
+            <h4>Nitya Abhisheka</h4>
+            <p>Sacred holy bath performed with milk, honey, and herbs.</p>
+            <div class="price-tag">₹ 501 /-</div>
+        </div>
+        <div class="seva-card">
+            <h4>Sahasranama Archana</h4>
+            <p>Divine chanting of 1000 names for family welfare.</p>
+            <div class="price-tag">₹ 251 /-</div>
+        </div>
+        <div class="seva-card">
+            <h4>Kalyanotsava</h4>
+            <p>Celestial wedding ceremony of the Lord performed on special request.</p>
+            <div class="price-tag">₹ 5,001 /-</div>
+        </div>
+    </div>
+</body>
+</html>
